@@ -1,5 +1,3 @@
-import React from "react"
-
 type FooterProps = {
   title: string
   link: string
