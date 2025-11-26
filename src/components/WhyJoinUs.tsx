@@ -39,8 +39,8 @@ export default function WhyJoinUs() {
     <section className="container mx-auto mb-20 max-md:mb-14">
       <H2>Bize Katılmanız İçin Diğer Nedenler</H2>
       <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {reasons.map((item) => (
-          <li>
+        {reasons.map((item, index) => (
+          <li key={index}>
             <ReasonCard {...item} />
           </li>
         ))}

@@ -3,6 +3,7 @@ import Trending from "@/components/Trending"
 import WhyJoinUs from "./components/WhyJoinUs"
 import FAQ from "./components/FAQ"
 import Footer from "./components/Footer"
+import HomeEmailSection from "./components/HomeEmailSection"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Trending />
         <WhyJoinUs />
         <FAQ />
+        <HomeEmailSection />
         <Footer />
       </div>
     </main>

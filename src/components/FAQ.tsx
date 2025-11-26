@@ -70,12 +70,14 @@ export default function FAQ() {
         defaultValue="item-1"
       >
         {FAQ.map((item, index) => (
-          <AccordionItem value={`item-${index}`} className="pb-2">
-            <AccordionTrigger className="cursor-pointer items-center rounded-none bg-[#2d2d2d] p-6 text-2xl font-semibold text-white hover:bg-[#414141] hover:no-underline">
+          <AccordionItem value={`item-${index}`} key={index} className="pb-2">
+            <AccordionTrigger className="cursor-pointer items-center rounded-none bg-[#2d2d2d] p-6 text-2xl font-semibold text-white hover:bg-[#414141] hover:no-underline max-lg:text-lg">
               {item.title}
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-4 border-t border-black bg-[#2d2d2d] p-4 text-balance">
-              <p className="text-2xl text-white">{item.content}</p>
+              <p className="text-2xl text-white max-lg:text-lg">
+                {item.content}
+              </p>
             </AccordionContent>
           </AccordionItem>
         ))}

@@ -34,7 +34,7 @@ export default function Footer() {
       </h3>
       <ul className="grid grid-cols-4 gap-3 pb-10 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
         {FooterItem.map((item) => (
-          <li>
+          <li key={item.title}>
             <a
               href={item.link}
               className="text-sm text-[#ffffffb3] underline underline-offset-2"
