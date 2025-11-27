@@ -118,3 +118,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  background-color: #1c1c1c;
+  width: 1.5rem !important;
+  height: 7.5rem !important;
+  border-radius: 0.5rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-top: 0px !important;
+}
+
+.swiper-button-prev > svg,
+.swiper-button-next > svg {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  fill: #ffffffb3 !important;
+}

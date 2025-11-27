@@ -63,12 +63,7 @@ export default function FAQ() {
   return (
     <section className="container mx-auto mb-20 max-md:mb-14">
       <H2>Sıkça Sorulan Sorular</H2>
-      <Accordion
-        type="single"
-        collapsible
-        className="w-full"
-        defaultValue="item-1"
-      >
+      <Accordion type="single" collapsible className="w-full">
         {FAQ.map((item, index) => (
           <AccordionItem value={`item-${index}`} key={index} className="pb-2">
             <AccordionTrigger className="cursor-pointer items-center rounded-none bg-[#2d2d2d] p-6 text-2xl font-semibold text-white hover:bg-[#414141] hover:no-underline max-lg:text-lg">

@@ -7,6 +7,7 @@ export const usePopularMovies = () => {
     queryKey: ["popular-movies"],
     queryFn: async () => {
       const res = await movieService.getPopular()
+      console.log("res: ", res)
       return res.data.results
     },
     staleTime: 1000 * 60 * 2,
